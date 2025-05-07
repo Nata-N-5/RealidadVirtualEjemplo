@@ -8,7 +8,7 @@ const scene = new THREE.Scene();
 
 // Cámara
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-camera.position.z = 5;
+
 
 
 
@@ -26,7 +26,7 @@ document.body.appendChild( VRButton.createButton( renderer ) );
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 }); // Verde
 const cube = new THREE.Mesh(geometry, material);
-cube.position.set(0, 1, -3);
+cube.position.set(0, 1, -20);
 scene.add(cube);
 
 // Animación
