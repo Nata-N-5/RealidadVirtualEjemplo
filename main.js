@@ -26,6 +26,7 @@ document.body.appendChild( VRButton.createButton( renderer ) );
 const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 }); // Verde
 const cube = new THREE.Mesh(geometry, material);
+cube.position.set(0, 1, -3);
 scene.add(cube);
 
 // Animación
